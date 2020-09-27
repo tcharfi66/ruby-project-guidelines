@@ -7,6 +7,7 @@ require_relative "match.rb"
 #require 'pry'
 
 class Team < ActiveRecord::Base
+    
 
-adsadasd
+
 end
