@@ -1,10 +1,5 @@
-require_relative '../../config/environment.rb'
-
-
-require_relative "restaurant.rb"
-require_relative "dish.rb"
-#JOIN TABLE 
 class Dish < ActiveRecord::Base
-    
+    has_many :restaurantdishes 
+    has_many :restaurants, through: :restaurantdishes
 
 end
