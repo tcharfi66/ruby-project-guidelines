@@ -5,8 +5,7 @@ end
 def find_restaurant 
     puts "Enter Restaurant:  " 
     name= gets.chomp
-    Restaurant.find_by(name: name)
-
+   # Restaurant.find_by(name: name)
 end
 
 # def restaurant_menu 
