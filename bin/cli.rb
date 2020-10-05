@@ -1,7 +1,26 @@
 require 'pry'
 def intro 
+    puts "
+    ╦ ╦╔═╗╦  ╔═╗╔═╗╔╦╗╔═╗  ╔╦╗╔═╗  ╦═╗╔═╗╔═╗╔╦╗╔═╗┬┬┬
+    ║║║║╣ ║  ║  ║ ║║║║║╣    ║ ║ ║  ╠╦╝║╣ ╚═╗ ║ ║ ║│││
+    ╚╩╝╚═╝╩═╝╚═╝╚═╝╩ ╩╚═╝   ╩ ╚═╝  ╩╚═╚═╝╚═╝ ╩ ╚═╝ooo
+    
+    "
     puts "Welcome To Our Network of Restaurants !!!" 
+    
 end
+
+def menu 
+    puts "1) About Us "
+    puts "2) Find Restaurant Location"
+    puts "3) Enter a Cuisine Type, Get a Dish Suggestion"
+    puts "4) Get a Dish From a Specific Restaurant"
+    puts "5) Enter a Dish and see which one of Our Restaurants offers it"
+    puts "6) Input a dollar amount and we will show you a dish that fits your budget"
+    input = gets.chomp 
+    choice = input.to_i
+
+end 
 
 def about 
     puts "We have built this app to help you and your significant other stop being so 
@@ -22,7 +41,7 @@ def cuisine
     puts "What kind of Cuisine are you in the mood for tonight?"
     c = gets.chomp 
     x = Dish.find_by(cuisine: c)
-    pp "Since you are looking for" + c + ", we found you " +  x.name
+    pp "Since you are looking for " + c + ", we found you " +  x.name.downcase
 end
 
 

@@ -4,15 +4,15 @@ require_relative '../bin/cli.rb'
 
 
 intro 
-
-about
+menu
 
 #get location of a specific restaurant 
 
         # find_restaurant_loc
 
   #enter cuisine get a dish 
-        # cuisine
+
+#  cuisine
       
 
  #get a dish from a restaurant         
