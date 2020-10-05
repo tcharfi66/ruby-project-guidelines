@@ -4,22 +4,25 @@ require_relative '../bin/cli.rb'
 
 
 intro 
-menu
 
-#get location of a specific restaurant 
+choice = menu 
 
-        # find_restaurant_loc
+if choice == 1 
+    about
+elsif choice == 2
+    find_restaurant_loc
+elsif choice == 3
+    cuisine 
+elsif choice == 4
+    restaurant_menu
+elsif choice == 5 
+    get_restaurant 
+elsif choice == 6 
+    below_price 
+elsif choice == 7 
+    "Goodbye!"
+    return 0
+end
 
-  #enter cuisine get a dish 
 
-#  cuisine
-      
 
- #get a dish from a restaurant         
-        #restaurant_menu
-
-#enter a dish and see which restaurant in our network offers it 
-        # get_restaurant 
-
-#input price, get a dish<= that price       
-        #below_price
